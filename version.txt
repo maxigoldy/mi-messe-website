@@ -1,0 +1,6 @@
+v.1.0
+Last Edited: 19.01.2025 14:23
+By Maximilian Goldmann
+
+Changes:
+- final push

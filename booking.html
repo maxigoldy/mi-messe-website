@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Living Tomorrow Expo - 2025</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta name="robots" content="noindex, nofollow">
+  <meta content="" name="description">
+  <link href="img/favicon/favicon.png" rel="icon">
+  <link href="img/favicon/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<!--==========================
+      Author: Maximilian Goldmann
+    ============================-->
+
+<body id="body">
+
+  <!--==========================
+    Top Bar
+  ============================-->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@livingtomorrowexpo.com</a>
+        <i class="fa fa-phone"></i> +49 123456789
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="index.html" class="scrollto"><img src="img/lte_banner.png" alt="banner" style="width:auto;height:45px;"></a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html#partner">Aussteller</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+          <li class="menu-has-children"><a href="#">Ticketshop</a>
+            <ul>
+              <li><a href="#tickets">Ticketshop</a></li>
+              <li><a href="register.html">Mein Konto</a></li>
+            </ul>
+          </li>
+          <li class="menu-has-children"><a href="#">Rechtliches</a>
+            <ul>
+              <li><a href="#">Impressum</a></li>
+              <li><a href="#">Datenschutzerklärung</a></li>
+              <li><a href="#">AGB & Cookies</a></li>
+              <li><a href="#">Ausstellerrichtlinien</a></li>
+              <li><a href="quellen.html">Quellenangabe</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#contact">Kontakt</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+
+    <div class="intro-content">
+      <h2>Buche die <span>Zukunft.</span><br> Jetzt.</h2>
+    </div>
+
+    <div id="intro-carousel" class="owl-carousel" >
+      <div class="item" style="background-image: url('img/carousel/a_04_wohnen_in_der_zukunft_shutterstock_1642269859_s.1920x1080.jpg');"></div>
+      <div class="item" style="background-image: url('img/carousel/bridge-2106388_1920.jpg');"></div>
+      <div class="item" style="background-image: url('img/carousel/pexels-photo-860227.png');"></div>
+      <div class="item" style="background-image: url('img/carousel/pexels-photo-5483155.png');"></div>
+      <div class="item" style="background-image: url('img/carousel/sky-apartment-5074975_1920.jpg');"></div>
+    </div>
+
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="tickets">
+        <div class="container">
+          <div class="section-header">
+            <h2><br>Ticketshop</h2>
+            <p>
+              Wähle aus verschiedenen Ticketoptionen, passe sie deinen Bedürfnissen an und bezahle direkt hier!
+            </p>
+          </div>
+      
+          <!-- Bezahlfunktion -->
+          <div class="payment">
+            <p>Wähle deine Tickets aus und sieh dir die Gesamtsumme an. Schüler/Studententickets sind kostenlos, aber nur mit gültigem Ausweis nutzbar.</p>
+            <form id="ticket-form" class="ticket-form">
+              <div class="form-group">
+                <label for="ticket-type-1">1 Tag - Erwachsenenticket (18 €)</label>
+                <input type="number" id="ticket-type-1" class="form-control" min="0" value="0">
+              </div>
+              <div class="form-group">
+                <label for="ticket-type-2">2 Tage - Erwachsenenticket (25 €)</label>
+                <input type="number" id="ticket-type-2" class="form-control" min="0" value="0">
+              </div>
+              <div class="form-group">
+                <label for="ticket-type-3">2 Tage - Schüler/Studententicket (GRATIS)</label>
+                <input type="number" id="ticket-type-3" class="form-control" min="0" value="0">
+              </div>
+            </form>
+            <div class="summary">
+              <h2 class="extraheader">Kasse:</h2>
+              <p>Gesamtsumme: <span id="total-price" class="highlight-2">0.00</span> €</p>
+            </div>
+            <div class="payment-methods">
+              <h2 class="extraheader">Zahlungsmethode</h2>
+              <div class="payment-buttons">
+                <a href="register.html" class="payment-button">
+                  <i class="fab fa-apple"></i> Apple Pay
+                </a>
+                <a href="register.html" class="payment-button">
+                  <i class="fab fa-paypal"></i> PayPal
+                </a>
+                <a href="register.html" class="payment-button">
+                  <i class="fas fa-credit-card"></i> Kreditkarte
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about" class="wow fadeInUp">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 about-img">
+              <img src="img/delorian.jpg" alt="Quelle: https://pixabay.com/de/vectors/delorean-wagen-zeitmaschine-38103/">
+            </div>
+  
+            <div class="col-lg-6 content">
+              <h2>Zukunft einen Klick entfernt.</h2>
+              <h3>12. bis 15. Mai 2025 - Messe Bremen, Hallen 2-5</h3>
+  
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i> Erlebe interaktive Technologien, die die Zukunft greifbar machen.</li>
+                <li><i class="ion-android-checkmark-circle"></i> Entdecke nachhaltige Innovationen für ein umweltfreundlicheres Leben.</li>
+                <li><i class="ion-android-checkmark-circle"></i> Treffe Visionäre und gestalte die Trends von morgen mit.</li>
+              </ul>
+  
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- #about -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Tickets sichern</h3>
+            <p class="cta-text">Sichere Dir jetzt die Tickets für ein einmaliges Wochenende. Als Tagesticket für 1 oder 2 Tage zu erhalten. Für Schüler und Studenten mit gültigem Ausweisdokument kostenlos!</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#tickets">Jetzt buchen</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>LivingTomorrowExpo</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+  <script src="contactform/contactform.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Overwrite + additional css -->
+  <style>
+.payment {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.summary, .payment-methods {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.payment-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.payment-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #0c2e8a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.payment-button:hover {
+  background-color: white;
+  color: #0c2e8a;
+}
+
+.payment-button i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.highlight-2 {
+  font-weight: bold;
+  color: #0c2e8a;
+}
+
+
+  </style>
+  <!-- Overwrite + additional css -->
+</body>
+</html>

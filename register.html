@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Registrieren - Living Tomorrow Expo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/popup/popup.css">
+    <script src="lib/popup/popup.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Overwrite + additional css -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .register-container img {
+            max-width: 50px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+
+        .social-buttons {
+            margin-top: 20px;
+        }
+
+        .social-buttons a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .social-buttons a i {
+            margin-right: 8px;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .footer-links a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- Overwrite + additional css -->
+</head>
+
+<!--==========================
+      Author: Maximilian Goldmann
+    ============================-->
+    
+<body>
+    <div class="register-container">
+        <a href="index.html"><img src="img/logo.png" alt="Living Tomorrow Expo Logo"></a>
+        <h1>Sign in | Register</h1>
+        <p>Leben von Morgen Erleben!</p>
+
+        <form>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="user@livingtomorrowexpo.maxigoldmann.de">
+            </div>
+        </form>
+        <button onclick="pujs.popup(title = 'Register fehlgeschlagen!', message = 'Wir arbeiten aktuell an einem Register. Deine Karten können vorort gekauft werden.', buttons = [{ 'text': 'Benachrichtigen', callback: () => { pujs.alert('Du erhälst eine E-Mail bei Fertigstellung.', 'success') } },{ 'text': 'Weitere Informationen', callback: () => { pujs.pullOut('<h1>Dieses Feature wird kommen!</h1><p>Aktuell arbeiten wir noch an unserer Seite. Daher sind sämtliche Features wie das Register noch nicht fertig.</p>') } }]);" type="submit" class="btn" >Continue</button>
+
+
+        <p style="margin-top: 20px; font-size: 12px;">When you create an account, you agree to our <a href="#">Terms of use</a>. Learn how we handle your data in our <a href="#">Privacy notice</a>.</p>
+
+        <div class="social-buttons">
+            <a href="#" class="google"><i class="fab fa-google"></i> Continue with Google</a>
+            <a href="#" class="apple"><i class="fab fa-apple"></i> Continue with Apple</a>
+            <a href="#" class="facebook"><i class="fab fa-facebook"></i> Continue with Facebook</a>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Legal notice</a> | <a href="#">Privacy notice</a>
+        </div>
+    </div>
+</body>
+</html>
